@@ -121,22 +121,20 @@ for (const movie of movies) {
 function createMovieCards(movie) {
     let cardBox = document.createElement("div");
     let card = document.createElement("div");
-    cardBox.classList.add("col-10", "col-lg-4");
-    card.classList.add("card", "bg-black", "border-0", "rounded-3", "cardItem", "h-100");
+    cardBox.classList.add("col-2", "col-lg-4");
+    card.classList.add("card", "bg-black", "border-0");
     card.innerHTML = `
-        <div class="card-body d-flex flex-column p-4 rounded-6 justify-content-between">
-            <div class="contents">
-                <div class="moviePhoto">
-                    <img src="${movie.photo}" alt="yourname" class="card-img w-100 mb-4">
-                </div>
-                <div class="text-white">
-                    <h4 class="movie fw-bold">${movie.name}</h4>
-                    <p class="detail small text-white-50">IMDb: ${movie.imdb}</p>
-                </div>
+        <div class="card-body p-4">
+            <div class="moviePhoto">
+                <img src="${movie.photo}" alt="yourname" class="card-img w-100 mb-4">
             </div>
-            <div class="buttons d-flex flex-column flex-lg-row gap-3">
+            <div class="text-white">
+                <h4 class="movie fw-bold">${movie.name}</h4>
+                <p class="detail small text-white-50">IMDb: ${movie.imdb}</p>
+            </div>
+            <div class="buttons d-flex gap-3">
                 <button class="watchBtn w-100 btn btn-danger text-white px-3">Watch Now</button>
-                <button class="downloadBtn w-100 btn btn-dark text-white px-3">Download</button>
+                <button class="watchBtn w-100 btn btn-dark text-white px-3">Download</button>
             </div>
         </div>
     `;

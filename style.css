@@ -11860,8 +11860,21 @@ body {
   cursor: pointer;
 }
 
-.card-body {
+.card-body .moviePhoto {
   overflow: hidden;
+  border-radius: 7px;
+}
+
+.card-body .buttons .watchBtn, .card-body .buttons .downloadBtn {
+  transition: 0.2s;
+}
+
+.card-body .buttons .watchBtn:hover {
+  transform: translateY(-2px);
+}
+
+.card-body .buttons .downloadBtn:hover {
+  transform: translateY(-2px);
 }
 
 .card img {
@@ -11870,6 +11883,10 @@ body {
 
 .card:hover img {
   transform: scale(1.03);
+}
+
+.card .card-body .buttons {
+  margin-top: auto !important;
 }
 
 /*# sourceMappingURL=style.css.map */

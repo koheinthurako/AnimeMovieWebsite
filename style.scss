@@ -15,9 +15,20 @@ body {
 }
 
 .card-body .moviePhoto{
-    width: 232px;
-    height: 370px;
     overflow: hidden;
+    border-radius: 7px;
+}
+
+.card-body .buttons .watchBtn, .card-body .buttons .downloadBtn {
+    transition: 0.2s;
+}
+
+.card-body .buttons .watchBtn:hover{
+    transform: translateY(-2px);
+}
+
+.card-body .buttons .downloadBtn:hover{
+    transform: translateY(-2px);
 }
 
 .card img{
@@ -26,4 +37,12 @@ body {
 
 .card:hover img{
     transform: scale(1.03);
+}
+
+.cardItem{
+    // height: max-content;
+}
+
+.card .card-body .buttons{
+    margin-top: auto !important;
 }
