@@ -124,7 +124,6 @@ function deleteReviewBox() {
 }
 
 function movieReviewCards() {
-    // console.log(this.parentElement.parentElement);
     let movieRevBox = document.createElement("div");
     movieRevBox.classList.add(".movRevBox");
     movieRevBox.innerHTML = `
