@@ -127,7 +127,7 @@ function movieReviewCards() {
     let movieRevBox = document.createElement("div");
     movieRevBox.classList.add(".movRevBox");
     movieRevBox.innerHTML = `
-        <div class="col-10 col-lg-12 d-flex justify-content-center flex-column flex-md-row mx-auto p-5 gap-4 gap-lg-5 bg-white rounded-4 reviewBox">
+        <div class="col-10 col-lg-12 d-flex justify-content-center flex-column flex-md-row align-items-center align-items-lg-stretch mx-auto p-5 gap-4 gap-lg-5 bg-white rounded-4 reviewBox">
             <i class="bi bi-x fs-1 closeSymbol"></i>
             <img src="./images/3-gardenofwords.jpg" alt="" class="w-50 rounded-3">
             <div class="col-12 col-md-5 d-flex flex-column justify-content-between">

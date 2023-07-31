@@ -11914,6 +11914,14 @@ body {
 
 @media screen and (max-width: 768px) {
   .reviewBox img {
+    width: 490px !important;
+  }
+  .reviewsContainer {
+    margin: 0 !important;
+  }
+}
+@media screen and (max-width: 568px) {
+  .reviewBox img {
     width: 330px !important;
   }
 }
