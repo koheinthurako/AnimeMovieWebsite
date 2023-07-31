@@ -11856,6 +11856,11 @@ body {
   background-color: rgb(33, 33, 33);
 }
 
+.container .movieBox.blur {
+  filter: blur(12px);
+  pointer-events: none;
+}
+
 .card {
   cursor: pointer;
 }
@@ -11865,11 +11870,11 @@ body {
   border-radius: 7px;
 }
 
-.card-body .buttons .watchBtn, .card-body .buttons .downloadBtn {
+.card-body .buttons .reviewBtn, .card-body .buttons .downloadBtn {
   transition: 0.2s;
 }
 
-.card-body .buttons .watchBtn:hover {
+.card-body .buttons .reviewBtn:hover {
   transform: translateY(-2px);
 }
 
@@ -11887,6 +11892,30 @@ body {
 
 .card .card-body .buttons {
   margin-top: auto !important;
+}
+
+.reviewBox {
+  position: relative;
+}
+
+.closeSymbol {
+  position: absolute;
+  top: 1%;
+  right: 2%;
+  cursor: pointer;
+}
+
+.reviewsContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 20px 25px;
+}
+
+@media screen and (max-width: 768px) {
+  .reviewBox img {
+    width: 330px !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

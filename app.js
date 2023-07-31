@@ -50,6 +50,7 @@
 // }
 
 const movieBox = document.querySelector(".movieBox");
+const reviewsContainer = document.querySelector(".reviewsContainer");
 
 const movies = [
     {
@@ -113,16 +114,54 @@ const movies = [
 let box;
 
 for (const movie of movies) {
-    // console.table(movie);
     createMovieCards(movie);
     movieBox.append(box);
 };
 
+function deleteReviewBox() {
+    this.parentElement.remove();
+    movieBox.classList.remove("blur");
+}
+
+function movieReviewCards() {
+    // console.log(this.parentElement.parentElement);
+    let movieRevBox = document.createElement("div");
+    movieRevBox.classList.add(".movRevBox");
+    movieRevBox.innerHTML = `
+        <div class="col-10 col-lg-12 d-flex justify-content-center flex-column flex-md-row mx-auto p-5 gap-4 gap-lg-5 bg-white rounded-4 reviewBox">
+            <i class="bi bi-x fs-1 closeSymbol"></i>
+            <img src="./images/3-gardenofwords.jpg" alt="" class="w-50 rounded-3">
+            <div class="col-12 col-md-5 d-flex flex-column justify-content-between">
+                <div class="texts">
+                    <h4 class="fw-bold mb-3">Hello World</h4>
+                    <p class="text-black-50 small">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda numquam vel doloribus sed quos reiciendis fugit soluta impedit dolor illo, minima eaque eius obcaecati. Sapiente nesciunt beatae provident voluptatum neque.
+                    </p>
+                </div>
+                <div class="d-flex gap-2 gap-lg-3 flex-column flex-lg-row">
+                    <button class="btn w-100 btn-danger text-white">Watch Now</button>
+                    <button class="btn w-100 btn-dark">Download</button>
+                </div>
+            </div>
+        </div>
+    `;
+
+    movieBox.classList.add("blur");
+    reviewsContainer.append(movieRevBox);
+
+    let closeBtn = document.querySelector(".closeSymbol");
+    closeBtn.addEventListener('click', deleteReviewBox);
+
+}
+
+let xxx = 0;
+
 function createMovieCards(movie) {
     let cardBox = document.createElement("div");
     let card = document.createElement("div");
-    cardBox.classList.add("col-10", "col-lg-4");
+    cardBox.classList.add("col-10", "col-md-5", "col-lg-4");
     card.classList.add("card", "bg-black", "border-0", "rounded-3", "cardItem", "h-100");
+    card.setAttribute("id", movie.id);
     card.innerHTML = `
         <div class="card-body d-flex flex-column p-4 rounded-6 justify-content-between">
             <div class="contents">
@@ -135,13 +174,18 @@ function createMovieCards(movie) {
                 </div>
             </div>
             <div class="buttons d-flex flex-column flex-lg-row gap-3">
-                <button class="watchBtn w-100 btn btn-danger text-white px-3">Watch Now</button>
-                <button class="downloadBtn w-100 btn btn-dark text-white px-3">Download</button>
+                <button class="downloadBtn w-100 btn btn-danger text-white px-3">Download</button>
+                <button class="reviewBtn w-100 btn btn-dark text-white px-3">Review</button>
             </div>
         </div>
     `;
 
     cardBox.append(card);
     box = cardBox;
+
+    let reviewBtn = document.querySelectorAll(".reviewBtn");
+    reviewBtn.forEach(btn => {
+        btn.addEventListener('click', movieReviewCards);
+    });
 
 };
