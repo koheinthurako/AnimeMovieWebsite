@@ -11912,6 +11912,30 @@ body {
   margin: 20px 25px;
 }
 
+.reviewsContainer.animateIn {
+  animation: show_animate 0.2s ease-in forwards;
+}
+
+.reviewsContainer.animateOut {
+  animation: hide_animate 0.2s ease-out forwards;
+}
+
+@keyframes show_animate {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes hide_animate {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
 @media screen and (max-width: 768px) {
   .reviewBox img {
     width: 490px !important;
@@ -11919,7 +11943,7 @@ body {
 }
 @media screen and (max-width: 568px) {
   .reviewBox img {
-    width: 330px !important;
+    width: 250px !important;
   }
 }
 
