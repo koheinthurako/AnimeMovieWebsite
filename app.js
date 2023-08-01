@@ -138,9 +138,6 @@ function deleteReviewBox() {
 }
 
 function movieReviewCards(id) {
-    // if(reviewsContainer.contains("animateOut")) {
-    //     reviewsContainer.classList.remove("animateOut");
-    // }
     let movieRevBox = document.createElement("div");
     movieRevBox.classList.add(".movRevBox");
     const {name, photo, detail, detailMyanmar} = movies[id];
