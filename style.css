@@ -11905,6 +11905,14 @@ body {
   cursor: pointer;
 }
 
+.searchBtn:hover {
+  color: #fff !important;
+}
+
+.input {
+  width: 340px !important;
+}
+
 .reviewsContainer {
   position: absolute;
   top: 0;

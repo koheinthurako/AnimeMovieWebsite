@@ -51,6 +51,7 @@
 
 const movieBox = document.querySelector(".movieBox");
 const reviewsContainer = document.querySelector(".reviewsContainer");
+const search = document.querySelector(".searchBox input");
 
 const movies = {
     1: {
@@ -128,6 +129,8 @@ for (const movie of movieStore) {
     movieBox.append(box);
 };
 
+
+
 function deleteReviewBox() {
     reviewsContainer.classList.remove("animateIn");
     reviewsContainer.classList.add("animateOut");
@@ -177,9 +180,10 @@ function movieReviewCards(id) {
 function createMovieCards(movie) {
     let cardBox = document.createElement("div");
     let card = document.createElement("div");
-    cardBox.classList.add("col-10", "col-md-5", "col-lg-4");
+    cardBox.classList.add("movieCard", "col-10", "col-md-5", "col-lg-4");
     card.classList.add("card", "bg-black", "border-0", "rounded-3", "cardItem", "h-100");
     card.setAttribute("id", movie.id);
+    cardBox.setAttribute("data-movie", movie.name);
     card.innerHTML = `
         <div class="card-body d-flex flex-column p-4 rounded-6 justify-content-between">
             <div class="contents">
@@ -200,6 +204,20 @@ function createMovieCards(movie) {
 
     cardBox.append(card);
     box = cardBox;
+
+    search.addEventListener('input', () => {
+        const movieCard = document.querySelectorAll(".movieCard");
+        let searchSkills = search.value.trim().toLowerCase();
+        movieCard.forEach(box => {
+            let movie = box.dataset.movie.toLowerCase(); // ဒီနေရာသည် အဓိက HTML ထဲက data-skills Attribute ကို လှမ်းယူပြီး အထဲက Value များကို တိုက်စစ်ခြင်း
+            // let roles = box.dataset.role.toLowerCase();
+            if(movie.includes(searchSkills)) {
+                box.style.display = "flex";
+            } else {
+                box.style.display = "none";
+            }
+        });
+    });
 
 };
 
