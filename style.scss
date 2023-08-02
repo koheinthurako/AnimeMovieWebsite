@@ -92,6 +92,13 @@ body {
   }
 }
 
+@media screen and (max-width: 990px) {
+    .reviewBox img{
+        width: 550px !important;
+        margin-bottom: 12px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .reviewBox img{
         width: 490px !important;
@@ -99,6 +106,11 @@ body {
 }
 
 @media screen and (max-width: 568px) {
+
+    .reviewsContainer {
+        margin: 20px 0;
+    }
+
     .reviewBox img{
         width: 250px !important;
     }

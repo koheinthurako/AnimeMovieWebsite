@@ -142,16 +142,16 @@ function movieReviewCards(id) {
     movieRevBox.classList.add(".movRevBox");
     const {name, photo, detail, detailMyanmar} = movies[id];
     movieRevBox.innerHTML = `
-        <div class="col-11 col-lg-12 d-flex justify-content-center flex-column flex-md-row align-items-center align-items-lg-stretch mx-auto p-5 gap-4 gap-lg-5 bg-white rounded-4 reviewBox">
+        <div class="col-11 col-lg-12 d-flex justify-content-center flex-column flex-lg-row align-items-center align-items-lg-stretch mx-auto p-5 gap-4 gap-lg-5 bg-white rounded-4 reviewBox">
             <button class="btn text-danger" id="focusBtn">
                 <i class="bi bi-x fs-1 closeSymbol"></i>
             </button>
             <img src="${photo}" alt="" class="w-50 rounded-3">
-            <div class="col-12 col-md-5 d-flex flex-column justify-content-between">
+            <div class="col-12 col-md-11 col-lg-5 d-flex flex-column justify-content-between">
                 <div class="texts">
                     <h4 class="fw-bold mb-3">${name}</h4>
                     <p class="text-black-50 small mb-3">${detail}</p>
-                    <p class="text-black-50 small mb-3">${detailMyanmar}</p>
+                    <p class="text-black-50 small mb-5 mb-lg-3">${detailMyanmar}</p>
                 </div>
                 <div class="d-flex gap-2 gap-lg-3 flex-column flex-lg-row">
                     <button class="btn w-100 btn-danger text-white">Watch Now</button>
