@@ -209,8 +209,7 @@ function createMovieCards(movie) {
         const movieCard = document.querySelectorAll(".movieCard");
         let searchSkills = search.value.trim().toLowerCase();
         movieCard.forEach(box => {
-            let movie = box.dataset.movie.toLowerCase(); // ဒီနေရာသည် အဓိက HTML ထဲက data-skills Attribute ကို လှမ်းယူပြီး အထဲက Value များကို တိုက်စစ်ခြင်း
-            // let roles = box.dataset.role.toLowerCase();
+            let movie = box.dataset.movie.toLowerCase();
             if(movie.includes(searchSkills)) {
                 box.style.display = "flex";
             } else {
