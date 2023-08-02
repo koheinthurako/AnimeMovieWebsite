@@ -74,6 +74,10 @@ body {
     margin: 20px 25px;
 }
 
+.searchBox input {
+    margin: auto;
+}
+
 .reviewsContainer.animateIn {
   animation: show_animate 0.2s ease-in forwards;
 }
@@ -105,11 +109,19 @@ body {
         width: 550px !important;
         margin-bottom: 12px;
     }
+
+    .searchBox input {
+        width: 580px !important;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .reviewBox img{
         width: 490px !important;
+    }
+
+    .searchBox input {
+        width: 422px !important;
     }
 }
 
@@ -121,5 +133,9 @@ body {
 
     .reviewBox img{
         width: 250px !important;
+    }
+
+    .searchBox input {
+        width: 282px !important;
     }
 }
