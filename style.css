@@ -11952,6 +11952,31 @@ body {
     transform: scale(0);
   }
 }
+.adsWrapper {
+  position: fixed;
+  bottom: 12px;
+  right: 34px;
+}
+
+.adsBox {
+  max-width: 600px;
+}
+
+.contentBox {
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.closeAdsBtn {
+  opacity: 50%;
+  transition: 0.2s;
+}
+
+.closeAdsBtn:hover {
+  opacity: 100%;
+}
+
 @media screen and (min-width: 600px) {
   .searchBox input {
     width: 470px !important;
@@ -11983,6 +12008,11 @@ body {
   }
   .searchBox input {
     width: 282px !important;
+  }
+  .adsWrapper {
+    right: 12px;
+    bottom: auto !important;
+    top: 15% !important;
   }
 }
 

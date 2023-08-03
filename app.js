@@ -52,6 +52,7 @@
 const movieBox = document.querySelector(".movieBox");
 const reviewsContainer = document.querySelector(".reviewsContainer");
 const search = document.querySelector(".searchBox input");
+const adsBox = document.querySelector(".adsBox");
 
 const movies = {
     1: {
@@ -228,3 +229,36 @@ setTimeout(() => {
             });
         });
 }, 1000);
+
+function closeAds() {
+    this.parentElement.remove();
+}
+
+function createAds() {
+    let contentBox = document.createElement('div');
+    contentBox.classList.add("contentBox", "bg-light", "text-dark", "d-flex", "align-items-center", "px-3");
+    contentBox.innerHTML = `
+        <i class="bi bi-info fs-2 me-1"></i>
+        <p class="m-0 me-3 me-lg-5">Do you know "Thet Zaw Hein"?</p>
+        <i class="bi bi-x fs-2 closeAdsBtn"></i>
+    `;
+
+    adsBox.append(contentBox);
+
+    let closeAdsBtn = document.querySelectorAll(".closeAdsBtn");
+    closeAdsBtn.forEach(btn => {
+        btn.addEventListener('click', closeAds);
+    });
+
+}
+
+
+let i = 0;
+const interval = setInterval(() => {
+    createAds();
+    i++;
+    if(i > 2) {
+        clearInterval(interval);
+        i = 0;
+    };
+}, 3000);
