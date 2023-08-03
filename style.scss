@@ -82,7 +82,7 @@ body {
     margin: auto;
 }
 
-.reviewsContainer.animateIn {
+.reviewsContainer.animateIn, .contentBox.animateIn {
   animation: show_animate 0.2s ease-in forwards;
 }
 
@@ -114,15 +114,11 @@ body {
     right: 34px;
 }
 
-.adsBox {
-    max-width: 600px;
-}
-
 .contentBox {
+    width: 500px;
     border: none;
     border-radius: 12px;
     cursor: pointer;
-    
 }
 
 .closeAdsBtn {
@@ -160,7 +156,7 @@ body {
     }
 
     .searchBox input {
-        width: 1100px !important;
+        width: 1150px !important;
     }
 }
 
@@ -176,6 +172,11 @@ body {
 
     .searchBox input {
         width: 282px !important;
+    }
+
+    .contentBox {
+        width: 340px;
+        font-size: 10px;
     }
 
     .adsWrapper {

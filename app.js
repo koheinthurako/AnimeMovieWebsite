@@ -121,6 +121,29 @@ const movies = {
     }
 }
 
+const adsContents = {
+    1: {
+        title: "Thet Zaw Hein ကိုသိလား?"
+    },
+    2: {
+        title: "တော်တော်သဘောကောင်းတယ်လို့ပြောကြတယ်"
+    },
+    3: {
+        title: "ဒီ Website လေးက သူ အစမ်းရေးထားတာလေ"
+    },
+    4: {
+        title: "Device အကုန်လုံးနဲ့လည်း responsive ဖြစ်မယ်"
+    },
+    5: {
+        title: "အစမ်းကြော်ညာလေးတွေလည်းပါမယ်ပေါ့"
+    },
+    6: {
+        title: "ကြောညာကတော့ ခုပေါ်လာတဲ့ msg လေးတွေပါပဲ"
+    },
+}
+
+const adsAll = Object.values(adsContents);
+
 let box;
 
 const movieStore = Object.values(movies);
@@ -234,16 +257,18 @@ function closeAds() {
     this.parentElement.remove();
 }
 
-function createAds() {
+function createAds(id) {
     let contentBox = document.createElement('div');
     contentBox.classList.add("contentBox", "bg-light", "text-dark", "d-flex", "align-items-center", "px-3");
     contentBox.innerHTML = `
-        <i class="bi bi-info fs-2 me-1"></i>
-        <p class="m-0 me-3 me-lg-5">Do you know "Thet Zaw Hein"?</p>
-        <i class="bi bi-x fs-2 closeAdsBtn"></i>
+        <i class="bi bi-info-circle-fill me-2"></i>
+        <p class="m-0">${id.title}</p>
+        <i class="bi bi-x fs-2 ms-auto closeAdsBtn"></i>
     `;
 
+    contentBox.classList.add("animateIn");
     adsBox.append(contentBox);
+    // return contentBox;
 
     let closeAdsBtn = document.querySelectorAll(".closeAdsBtn");
     closeAdsBtn.forEach(btn => {
@@ -253,12 +278,18 @@ function createAds() {
 }
 
 
-let i = 0;
-const interval = setInterval(() => {
-    createAds();
-    i++;
-    if(i > 2) {
-        clearInterval(interval);
-        i = 0;
-    };
-}, 3000);
+function startInterval() {
+    let i = 0;
+    const interval = setInterval(() => {
+        createAds(adsAll[i]);
+            i++;
+            if(i >= adsAll.length) {
+                clearInterval(interval);
+                i = 0;
+            };
+        }, 2000);
+}
+
+setTimeout(() => {
+    startInterval();
+}, 2000);
