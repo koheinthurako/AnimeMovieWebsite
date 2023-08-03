@@ -140,6 +140,9 @@ const adsContents = {
     6: {
         title: "ကြောညာကတော့ ခုပေါ်လာတဲ့ msg လေးတွေပါပဲ"
     },
+    7: {
+        title: "ခုလို လာလည်ပေးတဲ့အတွက်ကျေးဇူးတင်ပါတယ်နော်..."
+    }
 }
 
 const adsAll = Object.values(adsContents);
@@ -273,7 +276,22 @@ function createAds(id) {
     let closeAdsBtn = document.querySelectorAll(".closeAdsBtn");
     closeAdsBtn.forEach(btn => {
         btn.addEventListener('click', closeAds);
+        // btn.addEventListener('click', e => {
+        //     closeAds(e.target.parentElement);
+        // });
     });
+
+    // contentBox.addEventListener('click', e => {
+    //     // console.log(e.target);
+    //     const btn = e.target;
+    //     if (btn.classList.contains("closeAdsBtn")) {
+    //         btn.addEventListener('click', closeAds);
+    //         // Add your close button functionality here
+    //     } else {
+    //         console.log("No");
+    //         // Add other functionality for clicks on contentBox here
+    //     }
+    // })
 
 }
 

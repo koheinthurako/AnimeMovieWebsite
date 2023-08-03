@@ -11928,7 +11928,7 @@ body {
   margin: auto;
 }
 
-.reviewsContainer.animateIn, .contentBox.animateIn {
+.reviewsContainer.animateIn {
   animation: show_animate 0.2s ease-in forwards;
 }
 
@@ -11963,8 +11963,47 @@ body {
   border: none;
   border-radius: 12px;
   cursor: pointer;
+  animation: show_toast 0.3s linear forwards;
 }
 
+.contentBox.hide_toast {
+  animation: hide_toast 0.3s ease forwards;
+}
+
+@keyframes show_toast {
+  0% {
+    transform: scale(0.5);
+  }
+  20% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(0.5);
+  }
+  80% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes hide_toast {
+  0% {
+    transform: scale(1.05);
+  }
+  40% {
+    transform: scale(0.7);
+  }
+  60% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
 .closeAdsBtn {
   opacity: 50%;
   transition: 0.2s;
