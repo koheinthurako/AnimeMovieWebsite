@@ -180,7 +180,7 @@ function movieReviewCards(id) {
 function createMovieCards(movie) {
     let cardBox = document.createElement("div");
     let card = document.createElement("div");
-    cardBox.classList.add("movieCard", "col-10", "col-md-5", "col-lg-4");
+    cardBox.classList.add("movieCard", "col-10", "col-md-5", "col-lg-3");
     card.classList.add("card", "bg-black", "border-0", "rounded-3", "cardItem", "h-100");
     card.setAttribute("id", movie.id);
     cardBox.setAttribute("data-movie", movie.name);
@@ -196,8 +196,8 @@ function createMovieCards(movie) {
                 </div>
             </div>
             <div class="buttons d-flex flex-column flex-lg-row gap-3">
-                <button class="downloadBtn w-100 btn btn-danger text-white px-3">Download</button>
-                <button class="reviewBtn w-100 btn btn-dark text-white px-3" id="${movie.id}">Review</button>
+                <button class="downloadBtn w-100 btn btn-sm btn-danger text-white px-3">Download</button>
+                <button class="reviewBtn w-100 btn btn-sm btn-dark text-white px-3" id="${movie.id}">Review</button>
             </div>
         </div>
     `;
