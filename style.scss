@@ -172,6 +172,15 @@ body {
     opacity: 100%;
 }
 
+.reviewBox .vdBoxContainer .videoBox.show {
+    width: 100%;
+    display: block;
+}
+
+.reviewBox .vdBoxContainer .videoBox.hide {
+    display: none;
+}
+
 @media screen and (min-width: 600px) {
     
     .searchBox input {

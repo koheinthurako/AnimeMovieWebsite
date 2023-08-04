@@ -167,6 +167,15 @@ function deleteReviewBox() {
     }, 200);
 }
 
+function showTrailer(target) {
+    // console.log(this.parentElement);
+    const video = target.parentElement.parentElement;
+    console.log(video);
+    // console.log(video.classList.contains("videoBox"));
+    
+
+}
+
 function movieReviewCards(id) {
     let movieRevBox = document.createElement("div");
     movieRevBox.classList.add(".movRevBox");
@@ -181,10 +190,15 @@ function movieReviewCards(id) {
                 <div class="texts">
                     <h4 class="fw-bold mb-3">${name}</h4>
                     <p class="text-black-50 small mb-3">${detail}</p>
-                    <p class="text-black-50 small mb-5 mb-lg-3">${detailMyanmar}</p>
+                    <p class="text-black-50 small mb-5 mb-lg-4">${detailMyanmar}</p>
+                    <div class="vdBoxContainer text-center">
+                        <video class="videoBox hide mb-4" muted controls>
+                            <source src="./media/yourname.mp4" type="video/mp4">
+                        </video>
+                    </div>
                 </div>
                 <div class="d-flex gap-2 gap-lg-3 flex-column flex-lg-row">
-                    <button class="btn w-100 btn-danger text-white">Watch Now</button>
+                    <button class="btn w-100 btn-danger text-white trailerBtn">Watch Trailer</button>
                     <button class="btn w-100 btn-dark">Download</button>
                 </div>
             </div>
@@ -201,6 +215,15 @@ function movieReviewCards(id) {
 
     const focusBtn = document.getElementById("focusBtn");
     focusBtn.focus();
+
+    let trailerBtn = document.querySelectorAll(".trailerBtn");
+    trailerBtn.forEach(btn => {
+        let videoBox = document.querySelectorAll(".videoBox");
+        // btn.addEventListener('click', showTrailer);
+        btn.addEventListener('click', e => {
+            showTrailer(e.target);
+        });
+    });
 
 }
 
@@ -309,5 +332,5 @@ function startInterval() {
 }
 
 setTimeout(() => {
-    startInterval();
+    // startInterval();
 }, 6000);
