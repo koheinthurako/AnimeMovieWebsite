@@ -61,7 +61,8 @@ const movies = {
         photo: "./images/1-yourname.jpg",
         imdb: 8.4,
         detail: "Mitsuha Miyamizu, a high school girl, yearns to live the life of a boy in the bustling city of Tokyo—a dream that stands in stark contrast to her present life in the countryside. Meanwhile in the city, Taki Tachibana lives a busy life as a high school student while juggling his part-time job and hopes for a future in architecture.One day, Mitsuha awakens in a room that is not her own and suddenly finds herself living the dream life in Tokyo—but in Taki's body! Elsewhere, Taki finds himself living Mitsuha's life in the humble countryside. In pursuit of an answer to this strange phenomenon, they begin to search for one another. Kimi no Na wa. revolves around Mitsuha and Taki's actions, which begin to have a dramatic impact on each other's lives, weaving them into a fabric held together by fate and circumstance.",
-        detailMyanmar: "ဒီကားကတော့ မသိတဲ့သူမရှိသလောက်ကို ရှားပါလိမ့်မယ်…ကမ္ဘာအနှံ့အောင်မြင်မှုတွေရခဲ့ပြီး Your Name ကြောင့် Anime ပရိသတ် ဖြစ်လာကြတဲ့သူတွေဒုနဲ့ဒေးပါပဲ…ဒါပေမဲ့ အခုထိမကြည့်ရသေးတဲ့သူတွေ ရှိနေနိုင်သေးတာကြောင့် နည်းနည်းလောက် ပြန်ညွှန်းပါရစေ…ဇာတ်လမ်းအစမှာ သဘာဝလွန်ဖြစ်ရပ်ဆန်းနဲ့ စတယ်…တိုကျိုမှာနေတဲ့ အထက်တန်းကျောင်းသားလေးတာချီဘာနာ တကိ နဲ့ အိတိုမိုရိ ဆိုတဲ့ နယ်မြို့လေးက မိယမိဇု မိဆုဟ ဆိုတဲ့ ကောင်မလေးတို့ဟာ ခန္ဓာကိုယ်ချင်းလဲသွားကြသတဲ့... အမှန်က ခန္ဓာကိုယ်လဲတယ်ဆိုတာထက် စိတ်ချင်းလဲသွားတယ်ဆို ပိုမှန်ပါတယ်…ဒါကို သူတို့တွေက အိပ်မက်လို့ ထင်နေကြပေမယ့် တကယ်ဖြစ်နေမှန်းသိတဲ့အခါမှာတော့သူတို့နှစ်ယောက်လုံး ဒီအဖြစ်ဆန်းကြီးကို အဖြေရှာဖို့ ကြိုးစားကြပါတော့တယ်.."
+        detailMyanmar: "ဒီကားကတော့ မသိတဲ့သူမရှိသလောက်ကို ရှားပါလိမ့်မယ်…ကမ္ဘာအနှံ့အောင်မြင်မှုတွေရခဲ့ပြီး Your Name ကြောင့် Anime ပရိသတ် ဖြစ်လာကြတဲ့သူတွေဒုနဲ့ဒေးပါပဲ…ဒါပေမဲ့ အခုထိမကြည့်ရသေးတဲ့သူတွေ ရှိနေနိုင်သေးတာကြောင့် နည်းနည်းလောက် ပြန်ညွှန်းပါရစေ…ဇာတ်လမ်းအစမှာ သဘာဝလွန်ဖြစ်ရပ်ဆန်းနဲ့ စတယ်…တိုကျိုမှာနေတဲ့ အထက်တန်းကျောင်းသားလေးတာချီဘာနာ တကိ နဲ့ အိတိုမိုရိ ဆိုတဲ့ နယ်မြို့လေးက မိယမိဇု မိဆုဟ ဆိုတဲ့ ကောင်မလေးတို့ဟာ ခန္ဓာကိုယ်ချင်းလဲသွားကြသတဲ့... အမှန်က ခန္ဓာကိုယ်လဲတယ်ဆိုတာထက် စိတ်ချင်းလဲသွားတယ်ဆို ပိုမှန်ပါတယ်…ဒါကို သူတို့တွေက အိပ်မက်လို့ ထင်နေကြပေမယ့် တကယ်ဖြစ်နေမှန်းသိတဲ့အခါမှာတော့သူတို့နှစ်ယောက်လုံး ဒီအဖြစ်ဆန်းကြီးကို အဖြေရှာဖို့ ကြိုးစားကြပါတော့တယ်..",
+        movieSrc: "./media/yourname.mp4"
     },
     2: {
         id: 2,
@@ -70,6 +71,7 @@ const movies = {
         imdb: 7.5,
         detail: "Tokyo is currently experiencing rain showers that seem to disrupt the usual pace of everyone living there to no end. Amidst this seemingly eternal downpour arrives the runaway high school student Hodaka Morishima, who struggles to financially support himself—ending up with a job at a small-time publisher. At the same time, the orphaned Hina Amano also strives to find work to sustain herself and her younger brother. Both fates intertwine when Hodaka attempts to rescue Hina from shady men, deciding to run away together. Subsequently, Hodaka discovers that Hina has a strange yet astounding power: the ability to call out the sun whenever she prays for it. With Tokyo's unusual weather in mind, Hodaka sees the potential of this ability. He suggests that Hina should become a sunshine girl—someone who will clear the sky for people when they need it the most. Things begin looking up for them at first. However, it is common knowledge that power always comes with a hefty price...",
         detailMyanmar: "မိုရီရှိမာ ဟိုဒါကာ(Morishima Hodaka) ဆိုတာက သူနေတဲ့ ကျွန်းမြို့လေးကနေ တိုကျိုမြို့ကြီးဆီကို ထွက်ပြေးလာတဲ့ ၁၆ နှစ်အရွယ်အိမ်ပြေးကောင်လေးတစ်ယောက်အာမာနို ဟီနာ(Amano Hina) ကတော့ တိုကျိုမြို့ကြီးမှာ အချိန်ပိုင်းအလုပ်လုပ်ပြီး ဘဝကို ထိန်းကျောင်းနေတဲ့ကောင်မလေးတိုကျိုမြို့ကြီးမှာ အသက်မပြည့်တဲ့ကလေးတွေအတွက် အလုပ်ရဖို့ဆိုတာ အင်မတန်ခဲယဉ်းပါတယ်…ဒီတော့ ဟိုဒါကာ အနေနဲ့ တိုကျိုမြို့ကြီးမှာ ဒုက္ခပင်လယ်ဝေပြီး အခက်ကြုံတော့တာပေါ့ ပေမဲ့ တစ်နေ့မှာ ဟီနာဆိုတဲ့ ကောင်မလေးနဲ့ အမှတ်မထင်တွေ့ဆုံခဲ့အပြီးမှာတော့……အခု ပရိတ်သတ်ကြီး ခံစားကြည့်ရှုရမယ့် “Weathering with you” ဆိုတဲ့ ဇာတ်လမ်းကြီး စတင်ပါတော့တယ်….ရုပ်ရှင်တစ်ကားလုံး စိုစွတ်တဲ့ခံစားချက်တွေရလောက်အောင် ရိုက်ပြထားတယ်...အေးချမ်းတဲ့ မိုးရာသီကို ကြိုက်နှစ်သက်တဲ့သူတွေအတွက်တော့ တကယ်ဖီးလ်လို့ကောင်းတဲ့ဇာတ်ကားပေါ့...အခုချိန်ကလည်း မိုးတွင်းရောက်နေပြီဆိုတော့ မိုးရွာနေတဲ့အချိန် ကော်ဖီလေးတစ်ခွက်နဲ့ ဒီကားလေးကြည့်နေရရင် Perfect ပါပဲ...ဇာတ်ဝင်တေးနဲ့ နောက်ခံတီးလုံးတွေကလည်း ထုံးစံအတိုင်း ရှယ်တွေပါ…နားကြပ်လေးတပ်ကြည့်သင့်"
+        
     },
     3: {
         id: 3,
@@ -179,7 +181,7 @@ function showTrailer(target) {
 function movieReviewCards(id) {
     let movieRevBox = document.createElement("div");
     movieRevBox.classList.add(".movRevBox");
-    const {name, photo, detail, detailMyanmar} = movies[id];
+    const {name, photo, detail, detailMyanmar, movieSrc} = movies[id];
     movieRevBox.innerHTML = `
         <div class="col-11 col-lg-12 d-flex justify-content-center flex-column flex-lg-row align-items-center align-items-lg-stretch mx-auto p-5 gap-4 gap-lg-5 bg-white rounded-4 reviewBox">
             <button class="btn text-danger" id="focusBtn">
@@ -193,7 +195,7 @@ function movieReviewCards(id) {
                     <p class="text-black-50 small mb-5 mb-lg-4">${detailMyanmar}</p>
                     <div class="vdBoxContainer text-center">
                         <video class="videoBox hide mb-4" muted controls>
-                            <source src="./media/yourname.mp4" type="video/mp4">
+                            <source src="${movieSrc}" type="video/mp4">
                         </video>
                     </div>
                 </div>
@@ -216,13 +218,11 @@ function movieReviewCards(id) {
     const focusBtn = document.getElementById("focusBtn");
     focusBtn.focus();
 
-    let trailerBtn = document.querySelectorAll(".trailerBtn");
-    trailerBtn.forEach(btn => {
-        let videoBox = document.querySelectorAll(".videoBox");
-        // btn.addEventListener('click', showTrailer);
-        btn.addEventListener('click', e => {
-            showTrailer(e.target);
-        });
+    let trailerBtn = document.querySelector(".trailerBtn");
+    trailerBtn.addEventListener('click', () => {
+        let videoBox =  document.querySelector(".videoBox");
+        videoBox.classList.remove("hide");
+        videoBox.classList.add("show");
     });
 
 }
@@ -245,7 +245,7 @@ function createMovieCards(movie) {
                     <p class="detail small text-white-50">IMDb: ${movie.imdb}</p>
                 </div>
             </div>
-            <div class="buttons d-flex flex-column flex-lg-row gap-3">
+            <div class="buttons d-flex flex-column flex-lg-row justify-content-center gap-2">
                 <button class="downloadBtn w-100 btn btn-sm btn-danger text-white px-3">Download</button>
                 <button class="reviewBtn w-100 btn btn-sm btn-dark text-white px-3" id="${movie.id}">Review</button>
             </div>
