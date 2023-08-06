@@ -11904,6 +11904,10 @@ body {
   margin-top: auto !important;
 }
 
+.reviewsContainer {
+  z-index: 1200;
+}
+
 .reviewBox {
   position: relative;
 }
@@ -11962,6 +11966,7 @@ body {
   position: fixed;
   bottom: 12px;
   right: 34px;
+  z-index: 1201;
 }
 
 .contentBox {
@@ -12087,8 +12092,7 @@ body {
   }
   .adsWrapper {
     right: 12px;
-    bottom: auto !important;
-    top: 15% !important;
+    bottom: 2% !important;
   }
   .navbar .nav-item .nav-link {
     width: 100%;
