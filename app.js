@@ -71,10 +71,46 @@ const movies = {
         id: 8,
         name: "Spirited Away",
         photo: "./images/8-spiriterdaway.jpg",
+        imdb: 8.5,
+        detail: "Ookami Kodomo no Ame to Yuki won the 2013 Japan Academy Prize for Animation of the Year, the 2012 Mainichi Film Award for Best Animation Film, and the 2013 Animation of the Year award at the Tokyo International Anime Fair. It won two awards at the Oslo Films from the South festival in Norway: the main award, the Silver Mirror, and the audience award. It won an Audience Award at 2013 New York International Children's Film Festival and the 2014 Best Anime Disc award from Home Media Magazine.",
+        detailMyanmar: "Ōkami Kodomo no Ame to Yuki လို့ အမည်ရတဲ့ ဒီဇာတ်ကားဟာ 2013 Japan Academy Prize for Animation of the Year, the 2012 Mainichi Film Award for Best Animation Film, the 2013 Animation of the Year Award တွေလက်ခံရရှိခဲ့ရုံသာမက… နော်ဝေနိုင်ငံရဲ့ အဓိကဆုဖြစ်တဲ့ The Silver Mirror နဲ့ The Audience Award တို့အပြင် 2013 New York International Children’s Film Festival မှာလဲ Audience Award ရရှိခဲ့သလို Home Media Magazine ရဲ့ 2014 Best Anime Disc award တို့ကိုပါ ရရှိထားတဲ့ဇာတ်ကားပဲဖြစ်ပါတယ်…ရိုက်ကူးပုံသပ်ရပ်လွန်း.. ဇာတ်အိမ်ကောင်းလွန်းပြီး မိခင်မေတ္တာကိုအသေသပ်ဆုံးတင်ပြသွားတာမို့ ကလေးတွေထက် လူကြီးတွေပါကြည့်သင့်တဲ့ နိုင်ငံတကာအထိထိုးဖောက်အောင်မြင်ခဲ့သော ဇာတ်ကားတစ်ကားလို့ ညွှန်းဆိုပါရစေ..",
+        movieSrc: "media/8-spiritedaway.mp4"
+    },
+    9: {
+        id: 9,
+        name: "Wolf Children",
+        photo: "./images/9-wolfchildren.jpg",
         imdb: 8.6,
         detail: "Stubborn, spoiled, and naïve, 10-year-old Chihiro Ogino is less than pleased when she and her parents discover an abandoned amusement park on the way to their new house. Cautiously venturing inside, she realizes that there is more to this place than meets the eye, as strange things begin to happen once dusk falls. Ghostly apparitions and food that turns her parents into pigs are just the start—Chihiro has unwittingly crossed over into the spirit world. Now trapped, she must summon the courage to live and work amongst spirits, with the help of the enigmatic Haku and the cast of unique characters she meets along the way. Vivid and intriguing, Sen to Chihiro no Kamikakushi tells the story of Chihiro's journey through an unfamiliar world as she strives to save her parents and return home.",
         detailMyanmar: "နာမည်ကြီး anime movie များစွာ ကို ရိုက်ကူးတဲ့director Hayao Miyazaki ရဲ့ ဖန်တီးမှု တစ်ခု ဖြစ်ပါတယ်။Spirited Away ဟာ Studio Ghibli ကို ကြီးမားတဲ့ မှတ်တိုင် စိုက်ထူ နိုင်စေ ခဲ့ပါတယ်။ဘာကြောင့်လဲဆိုတော့ ၂၀၀၁ ခုနှစ်မှာ Walt Disney Pictures ကEnglish adaptationရ ပြီးနောက် ၂၀၀၂ ခုနှစ်မှာGolden Bear နဲ့ Best Animated Feature award တို့ကိုဆွတ်ခူး နိုင်ခဲ့လို့ ပါပဲ။ဒါဟာ English speaking world ရဲ့အပြင်ကဒီလို ဆုမျိုး ကိုရရှိခဲ့တဲ့ တစ်ခုတည်း သော ကာတွန်းရုပ်ရှင်ပါ။နာမည်ကြီးသလောက် ကြည့် ဖို့ထိုက်တန်တဲ့ဒီ anime movie ကို မတော်တဆမကြည့်ရသေးဘူးဆိုရင် ကြည့်ဖြစ်အောင်ကြည့်ကြပါလို့တိုက်တွန်းချင်ပါတယ်။ ဇာတ်လမ်းအကျဉ်းကတော့ ချီဟီရိုဆိုတဲ့ ကလေးမလေးတို့ မိသားစုကနယ်မြို့လေးကို ပြောင်းလာရင်း လမ်းပျောက်ရာကနေ လှိုဏ်ဂူတစ်ခုထဲကို ဝင်ကြည့်ခဲ့တယ်။ဒီလိုနဲ့ပဲ စူးစမ်းရင်း ချီဟီရိုရဲ့ မိဘတွေဟာ လူသူမရှိတဲ့ ဈေးထဲက အစားအစာတွေကို စားပြီး ဝက်တွေ ဖြစ်သွားခဲ့တယ်။တကယ်တော့ သူတို့ဟာ မှော်အစွမ်း လောကထဲကို ရောက်ရှိသွားကြတာပါ။မိဘတွေ ဝက်ဖြစ်သွားပြီး မှော်လောကမှာ ဒုက္ခရောက်နေတဲ့ ချီဟီရိုကို ဟခု ဆိုတဲ့ ကောင်လေးက ကူညီပေးခဲ့တယ်။ဒီလိုနဲ့ပဲ ချီဟီရိုတစ်ယောက် ရောက်ရှိနေတဲ့ လောကကြီးက ဘယ်လိုလဲ ဘာတွေလဲမိဘတွေနဲ့ရော လူ့လောကကို ပြန်နိုင်မှာလား သိရအောင် အဆုံးထိ ကြည့်လိုက်ကြရအောင်….",
-        movieSrc: "media/8-spiritedaway.mp4"
+        movieSrc: "media/9-wolfchildren.mp4"
+    },
+    10: {
+        id: 10,
+        name: "Grave of the Fireflies",
+        photo: "./images/10-grave.jpg",
+        imdb: 8.5,
+        detail: "The story of Seita and Setsuko, two young Japanese siblings, living in the declining days of World War II. When an American firebombing separates the two children from their parents, the two siblings must rely completely on one another while they struggle to fight for their survival.",
+        detailMyanmar: "Best animation movie of all time ထဲက Grave of the Fireflies (1988)ဟာဆိုရင်ဖြင့်best animation movie of all timeထဲက တစ်ကားအဖြစ်သတ်မှတ်ခြင်းခံထားရပြီး IMDB.Rating အားဖြင့်လည်းအံသြစရာကောင်းလောက်အောင်8.5ထိရရှိထားတဲ့ animeဖြစ်လို့ကြည့်ဖစ်အောင်ကြည့်ကြပါလို့ တိုက်တွန်းပါရစေ….အညွှန်းပေးရမယ်ဆိုရင်တော့….ဒုတိယကမ္ဘာစစ်ကြီးဖြစ်နေတဲ့အချိန်ဂျပန်နိုင်ငံလည်းနေရာအနှံ့ဗုံးကျဲခံရလို့…ထွက်ပြေးကြရ-ဗုံးကျင်းတွေခိုကြရတဲ့အချိန်မှာ…..ဆဲတိုနဲ့ဆဲဆု တို့မောင်နှမ နဲ့သူတို့အမေလည်း ဗုံးခိုကြရရင်း..သူတို့အမေသေဆုံးသွားခဲ့ပါတယ်…အဖေကလည်းတိုက်ပွဲမှာတိုက်ခိုက်နေရတဲ့အတွက်..အဆက်အသွယ်ကလည်းမရဖြစ်နေပြန်တော့..ခိုကိုးရာမဲ့ မောင်နှမနှစ်ယောက်လည်းအမေ့ညီမ တစ်ဝမ်းကွဲ အဒေါ်အိမ်ကိုမှီခိုဖို့ရောက်လာခဲ့ကြပါတယ်..ရောက်ခါစကတော့ မောင်နှမနှစ်ယောက်ဆီကပါလာတဲ့အစားအသောက်တွေမျက်နှာကြောင့်ကြည်ကြည်ဖြူဖြူဖြစ်ပေမယ့်..အားလုံးကုန်သွားတဲ့အခါမှာတော့ ညိုငြင်စပြုလာပါတော့တယ်..ကြံခိုင်တဲ့အကိုဖြစ်ဆဲတို က အပြောအဆိုမခံချင်တာနဲ့မောင်နှမလေးနှစ်ယောက်အမေချန်ထားခဲ့တဲ့ပိုက်ဆံလေးနဲ့လမ်းဘေးနေရာ တစ်ခုမှာ စားသောက်ခဲ့ကြတယ်..ညမှောင်လာတဲ့အခါ ပိုးစုန်းကြူးလေးတွေဖမ်းပြီးအရင်ကမိသားစု စုံစုံလင်လင်ရှိချိန်တွေပြန်စဉ်းစားကြတယ်..တဖြည်းဖြည်းနဲ့စားစရာတွေမရှိတော့တဲ့အချိန်မှာသူတို့မောင်နှမနှစ်ယောက်ဘာတွေဆက်ဖြစ်ကြမှာလဲ….သူတို့ရဲ့အဖေနဲ့ရော ပြန်လည်ဆုံတွေ့နိုင်မှာလား..ဒီကားလေးကိုဂျပန်လို အဓိပ္ပါယ်ဆိုရင်”ပိုးစုန်းကြူးတို့ရဲ့ ဝိဉာဉ်” လို့ခေါ်ဆိုပါတယ်..ဒီရဲ့အဓိပ္ပါယ်ကရော ဘာကြောင့်ခေါ်တာလဲဆိုတာအပြည့်အဝဆက်သိချင်ရင်တော့ ဒီကားလေးကိုဆက်လက်ကြည့်လိုက်ပါလို့ပြောချင်ပါတယ် Best Animation Movie Of All Timeသတ်မှတ်ခံထားရတဲ့ဒီဇာတ်ကားလေးကိုကြည့်ရင်းနဲ့ ကိုယ်ပါခံစားမိလာပြီး..မျက်ရည်ကျတဲ့အထိပါပဲ",
+        movieSrc: "media/10-grave.mp4"
+    },
+    11: {
+        id: 11,
+        name: "Whisper of the Heart",
+        photo: "./images/11-whisperoftheheart.jpg",
+        imdb: 7.8,
+        detail: "Based on the manga with the same title, this animated film follows Shizuku, an inquisitive young girl and a voracious reader, who longs to be a writer when she grows up. One day she notices that all of her library books have previously been taken out by one Seiji Amasawa. Amid chasing after a large cat, befriending an eccentric antiques dealer and writing her first novel, Shizuku aims to find this mysterious boy who may well be her soul mate.",
+        detailMyanmar: "နာမည်ကြီး ကာတွန်းရုပ်ရှင်Spirited Away ကိုဖန်တီးထားတဲ့ ဒါရိုက်တာကပဲ ဆက်လက်ရိုက်ကူးထားတဲ့ဇာတ်ကားလေးတကားနဲ့ မိတ်ဆက်ပေးပါရစေ တခါက၁၄နှစ်အရွယ်ကျောင်းသူလေးShizuku ဟာ သူ့မိသားစုနဲ့ Tokyo မြို့မှာနေသတဲ့…သူဘဝကလည်းပုံမှန်ကျောင်းသူတယောက်လိုပါပဲ…ဒါပေမယ့် တခုထူးခြားတာက Shizuku ဟာကျောင်းပိတ်ရက် ဆိုတာနဲ့ဒေသခံစာကြည့်တိုက် သွားပြီးရှိသမျှFairy Tale (အကြမ်းဖျင်းအားဖြင့်ကလေးပုံပြင်ပေါ့)စာအုပ်တွေငှားဖတ်လေ့ရှိပြီးသူကိုယ်တိုင်ကလည်းစာရေးသူတယောက်ဖြစ်ချင်တဲ့သူပါ…ဒါမယ့် သူစာအုပ်တွေဖတ်ရင်းဖတ်ရင်း နာမည်တခုနဲ့ ရင်းနှီးလာတယ်…သူငှားဖတ်သမျှစာအုပ်တိုင်းရဲ့ငှားဖတ်သူစာရင်းကဒ်မှာSeiji ဆိုတဲ့ကောင်လေးကသူ့ရှေ့အမြဲရောက်နေတယ်…ဒီတော့ဆယ်ကျော်သက်မိန်းခလေးသဘာဝအတိုင်းမမြင်ဘူးတဲ့ကောင်လေးကိုပဲအထင်ကြီးမိပြီး သံယောဇဉ်တွယ်သွားတယ်တဲ့…ဒီလိုနဲ့တနေ့မှာ Shizuku က သူ့အဖေကိုထမင်းဘူး သွားပို့ပေးရင်းရထားစီးလာရာမှာရထားပေါ်ကိုမှတ်တိုင်တခုမှာကြောင်ကြီးတကောင်ကတက်လာပြီး Shizuku အတွက် အထူးအဆန်းဖြစ်သွားတာပေါ့…ပိုထူးဆန်းတာကကြောင်ကြီးကလူအတိုင်းပဲ သူဆင်းချင်တဲ့မှတ်တိုင်မှာဆင်းသွားတယ်တဲ့…ဒါနဲ့ကြောင်ကြီးကိုစိတ်ဝင်စားလို့ Shizukuကနောက်ကလိုက်ရင်း Alice ကနေ Wonderlandရောက်သလိုဖြစ်သွားမလားဆိုတာ ??စိတ်ဝင်စားဖွယ်ဆက်လက်ရှုစားကြပါသီချင်းတွေကို အတတ်နိုင်ဆုံး ဆီလျော်အောင်ဘာသာပြန်ပေးထားပါတယ်အမှားပါတာရှိ ခွင်.လွတ်ကြပါကုန်Japan Anime  တွေထုံးစံအတိုင်း ဇကားအပြီးမှာတော့မက်ဆေ့ချ်တခုတော့ ရစမြဲမို့ ကြည့်သင့်ပါတယ်ဗျ",
+        movieSrc: "media/11-whisperoftheheart.mp4"
+    },
+    12: {
+        id: 12,
+        name: "Ponyo",
+        photo: "./images/12-ponyo.jpg",
+        imdb: 7.6,
+        detail: "During a forbidden excursion to see the surface world, a goldfish princess encounters a human boy named Sosuke, who gives her the name Ponyo. Ponyo longs to become human, and as her friendship with Sosuke grows, she becomes more humanlike. Ponyo's father brings her back to their ocean kingdom, but so strong is Ponyo's wish to live on the surface that she breaks free, and in the process, spills a collection of magical elixirs that endanger Sosuke's village.",
+        detailMyanmar: "ဒီကားလေးရဲ့ အောင်မြင်မှုတွေကို ပြောရမယ်ဆိုရင်ပရိတ်သတ်တွေကြားမှာ Ponyo Ponyo ဖြစ်ခဲ့ရလောက်အောင် ကျော်ကြားခဲ့တဲ့ဇာတ်ကားလေးဖြစ်လာတဲ့အပြင်8th annual Tokyo Anime ဆုပေးပွဲမှာဆုတွေအများကြီးရစေခဲ့တဲ့ ဇာတ်ကားကောင်းလေးပါ။ဇာတ်လမ်းအကျဉ်းလေးကတော့ သဘောၤသားတစ်ဦးရဲ့အသက်ငါးနှစ်သာရှိတဲ့ သားလေးဟာ သူ့အမေနဲ့အတူပင်လယ်နားက တောင်ကုန်းလေးမှာ နေထိုင်တယ်။တစ်နေ့မှာ မမျှော်လင့်ပဲ ရွှေငါးလေးတစ်ကောင်ကို တွေ့ရှိခဲ့တယ်အဲ့ရွှေငါးလေးဟာ ရိုးရိုးငါးလေးမဟုတ်ပဲငါးတစ်ပိုင်းလူတစ်ပိုင်း ဖြစ်နေတဲ့ ရွှေငါးလေးဖြစ်တယ်ရွှေငါးလေးဟာ ဆိုဆုကီဆိုတဲ့ ကောင်လေးကိုသံယောဇဉ် တွယ်မိပြီး ဆိုဆုကီပေးထားတဲ့ပွန်းညို ဆိုတဲ့ နာမည်လေးနဲ့ လူသားတွေအနားမှာ နေခဲ့တယ်လူသားတွေကို မုန်းတဲ့ ပွန်းညို အဖေကသူ့သမီးလေးကို ဆိုဆုကီ ရှိကနေ နည်းအမျိုးမျိုးနဲ့ ပြန်လည်လုယူခဲ့တယ်ဒါပေမယ့် ပွန်းညိုက မှော်စွမ်းအားတွေရပြီးပြန်လွတ်သွားချိန်မှာ သူ့အစွမ်းတွေကြောင့် ဆိုဆုကီတို့မြို့တစ်မြို့လုံးရေနစ်မြုပ်ခဲ့တယ်သူကတော့ လူသားတစ်ယောက်အဖြစ်ဆိုဆုကီရှိကိုပြန်လာခဲ့တယ် ပွန်းညိုရဲ့မှော်အစွမ်းတွေကြောင့် ကမ္ဘာကြီးပျက်လုနီးပါးဖြစ်နေချိန်မှာငါးနှစ်အရွယ်သာရှိတဲ့ ဖြုစင်တဲ့ သူတို့ရဲ့ အချစ်စစ်နဲ့ကမ္ဘာကြီးကိုဘယ်လိုပြန်တည်ဆောက်သွားမလဲပွန်းညိုဟာ လူသားတွေကိုမုန်းတဲ့ သူ့အဖေ နဲ့ပဲရေအောက်မှာ ငါးအဖြစ်ဆက်နေသွားရမလားလူသားအဖြစ် ဆိုဆုကီအနားမှာနေရမလားဆိုတာဇာတ်ကားလေးကိုကြည့်ကြည့်လိုက်ကြနော်",
+        movieSrc: "media/12-ponyo.mp4"
     }
 }
 
