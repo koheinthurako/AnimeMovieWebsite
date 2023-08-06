@@ -314,5 +314,5 @@ function startInterval() {
 }
 
 setTimeout(() => {
-    startInterval();
+    // startInterval();
 }, 7000);
