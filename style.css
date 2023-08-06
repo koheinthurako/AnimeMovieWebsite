@@ -12022,6 +12022,10 @@ body {
   display: none;
 }
 
+.languageBtn {
+  cursor: pointer;
+}
+
 @media screen and (min-width: 600px) {
   .searchBox input {
     width: 470px !important;
