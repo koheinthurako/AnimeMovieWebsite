@@ -285,4 +285,4 @@ function startInterval() {
 
 setTimeout(() => {
     startInterval();
-}, 7000);
+}, 10000);
