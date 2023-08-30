@@ -337,6 +337,6 @@ function startInterval() {
         }, 1000);
 }
 
-// setTimeout(() => {
-//     startInterval();
-// }, 10000);
+setTimeout(() => {
+    startInterval();
+}, 10000);
