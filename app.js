@@ -1,7 +1,9 @@
 const movieBox = document.querySelector(".movieBox");
-const reviewsContainer = document.querySelector(".reviewsContainer");
+const reviewsContainer = document.getElementById("reviewsContainer");
+// const reviewsContainer = document.querySelector(".reviewsContainer");
 const search = document.querySelector(".searchBox input");
 const adsBox = document.querySelector(".adsBox");
+const closeBtn = document.querySelector(".closeSymbol");
 
 const movies = {
     1: {
@@ -137,14 +139,67 @@ for (const movie of movieStore) {
     movieBox.append(box);
 };
 
-function deleteReviewBox() {
-    reviewsContainer.classList.remove("animateIn");
-    reviewsContainer.classList.add("animateOut");
-    setTimeout(() => {
-        this.parentElement.parentElement.parentElement.remove();
-        movieBox.classList.remove("blur");
-    }, 200);
-}
+// function deleteReviewBox() {
+//     reviewsContainer.classList.remove("animateIn");
+//     reviewsContainer.classList.add("animateOut");
+//     setTimeout(() => {
+//         // this.parentElement.parentElement.parentElement.remove();
+//         let current = this.closest(".offcanvas");
+//         // console.log(current);
+//         let currentBox = current.querySelector(".movRevBox");
+//         console.log(currentBox);
+//         movieBox.classList.remove("blur");
+//     }, 200);
+// }
+
+// function movieReviewCards(id) {
+//     let movieRevBox = document.createElement("div");
+//     movieRevBox.classList.add(".movRevBox");
+//     const {name, photo, detail, detailMyanmar, movieSrc} = movies[id];
+//     movieRevBox.innerHTML = `
+//         <div class="col-11 col-lg-12 d-flex justify-content-center flex-column flex-lg-row align-items-center align-items-lg-stretch mx-auto p-5 gap-4 gap-lg-5 bg-white rounded-4 reviewBox">
+//             <button class="btn text-danger" id="focusBtn">
+//                 <i class="bi bi-x fs-1 closeSymbol"></i>
+//             </button>
+//             <img src="${photo}" alt="" class="w-50 rounded-3">
+//             <div class="col-12 col-md-11 col-lg-5 d-flex flex-column justify-content-between">
+//                 <div class="texts">
+//                     <h4 class="fw-bold mb-3">${name}</h4>
+//                     <p class="text-black-50 small mb-3">${detail}</p>
+//                     <p class="text-black-50 small mb-5 mb-lg-4">${detailMyanmar}</p>
+//                     <div class="vdBoxContainer text-center">
+//                         <video class="videoBox hide mb-4" muted controls oncontextmenu="return false;">
+//                             <source src="${movieSrc}" type="video/mp4">
+//                         </video>
+//                     </div>
+//                 </div>
+//                 <div class="d-flex gap-2 gap-lg-3 flex-column flex-lg-row">
+//                     <button class="btn w-100 btn-danger text-white trailerBtn">Watch Trailer</button>
+//                     <button class="btn w-100 btn-dark">Download</button>
+//                 </div>
+//             </div>
+//         </div>
+//     `;
+
+//     movieBox.classList.add("blur");
+//     reviewsContainer.append(movieRevBox);
+//     reviewsContainer.classList.add("animateIn");
+//     reviewsContainer.classList.remove("animateOut");
+
+//     const closeBtn = document.querySelector(".closeSymbol");
+//     closeBtn.addEventListener('click', deleteReviewBox);
+
+//     const focusBtn = document.getElementById("focusBtn");
+//     focusBtn.focus();
+
+//     let trailerBtn = document.querySelector(".trailerBtn");
+//     trailerBtn.addEventListener('click', () => {
+//         let videoBox =  document.querySelector(".videoBox");
+//         videoBox.classList.remove("hide");
+//         videoBox.classList.add("show");
+//     });
+
+// }
 
 function movieReviewCards(id) {
     let movieRevBox = document.createElement("div");
@@ -152,9 +207,6 @@ function movieReviewCards(id) {
     const {name, photo, detail, detailMyanmar, movieSrc} = movies[id];
     movieRevBox.innerHTML = `
         <div class="col-11 col-lg-12 d-flex justify-content-center flex-column flex-lg-row align-items-center align-items-lg-stretch mx-auto p-5 gap-4 gap-lg-5 bg-white rounded-4 reviewBox">
-            <button class="btn text-danger" id="focusBtn">
-                <i class="bi bi-x fs-1 closeSymbol"></i>
-            </button>
             <img src="${photo}" alt="" class="w-50 rounded-3">
             <div class="col-12 col-md-11 col-lg-5 d-flex flex-column justify-content-between">
                 <div class="texts">
@@ -180,11 +232,13 @@ function movieReviewCards(id) {
     reviewsContainer.classList.add("animateIn");
     reviewsContainer.classList.remove("animateOut");
 
-    const closeBtn = document.querySelector(".closeSymbol");
-    closeBtn.addEventListener('click', deleteReviewBox);
+    closeBtn.addEventListener('click', () => {
+        movieRevBox.remove();
+        movieBox.classList.remove("blur");
+    });
 
-    const focusBtn = document.getElementById("focusBtn");
-    focusBtn.focus();
+    // const focusBtn = document.getElementById("focusBtn");
+    // focusBtn.focus();
 
     let trailerBtn = document.querySelector(".trailerBtn");
     trailerBtn.addEventListener('click', () => {
@@ -215,7 +269,7 @@ function createMovieCards(movie) {
             </div>
             <div class="buttons d-flex flex-column flex-lg-row justify-content-center gap-2">
                 <button class="downloadBtn w-100 btn btn-sm btn-danger text-white px-3">Download</button>
-                <button class="reviewBtn w-100 btn btn-sm btn-dark text-white px-3" id="${movie.id}">Review</button>
+                <button class="reviewBtn w-100 btn btn-sm btn-dark text-white px-3" id="${movie.id}" data-bs-toggle="offcanvas" href="#offcanvasExample">Review</button>
             </div>
         </div>
     `;
@@ -283,6 +337,6 @@ function startInterval() {
         }, 1000);
 }
 
-setTimeout(() => {
-    startInterval();
-}, 10000);
+// setTimeout(() => {
+//     startInterval();
+// }, 10000);
