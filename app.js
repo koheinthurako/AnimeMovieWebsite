@@ -227,14 +227,14 @@ function movieReviewCards(id) {
         </div>
     `;
 
-    movieBox.classList.add("blur");
+    // movieBox.classList.add("blur");
     reviewsContainer.append(movieRevBox);
     reviewsContainer.classList.add("animateIn");
     reviewsContainer.classList.remove("animateOut");
 
     closeBtn.addEventListener('click', () => {
         movieRevBox.remove();
-        movieBox.classList.remove("blur");
+        // movieBox.classList.remove("blur");
     });
 
     // const focusBtn = document.getElementById("focusBtn");
