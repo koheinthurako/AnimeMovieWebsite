@@ -206,7 +206,7 @@ function movieReviewCards(id) {
     movieRevBox.classList.add(".movRevBox");
     const {name, photo, detail, detailMyanmar, movieSrc} = movies[id];
     movieRevBox.innerHTML = `
-        <div class="col-11 col-lg-12 d-flex justify-content-center flex-column flex-lg-row align-items-center align-items-lg-stretch mx-auto p-5 gap-4 gap-lg-5 bg-white rounded-4 reviewBox">
+        <div class="col-11 col-lg-12 d-flex justify-content-center flex-column flex-lg-row align-items-center align-items-lg-stretch mx-auto p-2 p-lg-5 gap-5 gap-lg-5 bg-white rounded-4 reviewBox">
             <img src="${photo}" alt="" class="w-50 rounded-3">
             <div class="col-12 col-md-11 col-lg-5 d-flex flex-column justify-content-between">
                 <div class="texts">
