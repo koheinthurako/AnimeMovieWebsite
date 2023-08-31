@@ -275,6 +275,9 @@ function createMovieCards(movie) {
     `;
 
     cardBox.append(card);
+    setTimeout(() => {
+        cardBox.classList.add("animate__bounceIn");
+    }, 1000);
     box = cardBox;
 
     search.addEventListener('input', () => {
