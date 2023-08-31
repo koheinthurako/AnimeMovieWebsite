@@ -252,12 +252,12 @@ function movieReviewCards(id) {
 function createMovieCards(movie) {
     let cardBox = document.createElement("div");
     let card = document.createElement("div");
-    cardBox.classList.add("movieCard", "col-10", "col-md-5", "col-lg-3");
+    cardBox.classList.add("movieCard", "col-6", "col-md-5", "col-lg-3");
     card.classList.add("card", "bg-black", "border-0", "rounded-3", "cardItem", "h-100");
     card.setAttribute("id", movie.id);
     cardBox.setAttribute("data-movie", movie.name);
     card.innerHTML = `
-        <div class="card-body d-flex flex-column p-4 rounded-6 justify-content-between">
+        <div class="card-body d-flex flex-column p-sm-4 rounded-6 justify-content-between">
             <div class="contents">
                 <div class="moviePhoto">
                     <img src="${movie.photo}" alt="yourname" class="card-img w-100 mb-4">

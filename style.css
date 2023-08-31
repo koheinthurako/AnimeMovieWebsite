@@ -12094,5 +12094,13 @@ body {
     border-radius: 7px;
   }
 }
+@media screen and (max-width: 568px) {
+  .movieCard .card-body .contents h4, .movieCard .card-body .contents .h4 {
+    font-size: 15px;
+  }
+  .movieCard .card-body .contents p {
+    font-size: 10px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
