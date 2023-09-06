@@ -13,13 +13,13 @@
         <nav class="navbar px-5 px-lg-0 navbar-expand-lg bg-body-tertiary fixed-top">
             <div class="container p-0 p-lg-2">
               <a class="navbar-brand me-5" href="#">ANIMOVIE</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#aboutOffcanvas" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" href="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center my-4 my-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" data-bs-toggle="offcanvas" href="#offcanvasExample">ABOUT</a>
+                    <a class="nav-link" aria-current="page" data-bs-toggle="offcanvas" href="#aboutOffcanvas">ABOUT</a>
                   </li>
                 </ul>
                 <form class="d-flex searchBox mt-3 mt-lg-0" role="search">
@@ -51,12 +51,34 @@
           </div>
         </div>
 
-        <div class="offcanvas offcanvas-top min-vh-100" id="aboutOffcanvas">
-          <div class="offcanvas-header bg-dark">
+        <div class="offcanvas pb-5 bg-dark offcanvas-top min-vh-100 show" id="aboutOffcanvas">
+          <div class="offcanvas-header bg-black">
             <h5 class="offcanvas-title text-white" id="aboutOffcanvas">Movie Review</h5>
             <button type="button" class="btn-close bg-light closeSymbol" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
-          <div class="offcanvas-body" id="reviewsContainer">
+          <div class="offcanvas-body">
+            <div class="container mt-2">
+              <div class="row aboutBox py-5 gap-5 justify-content-evenly align-items-center">
+                  <div class="col-10 col-lg-5 object-fit-cover">
+                      <img class="w-100 rounded-3" src="./images/me 3.jpg" alt="creator">
+                  </div>
+                  <div class="col-10 col-lg-5">
+                      <div class="text-white">
+                          <h2 class="fw-bold mb-1">THET ZAW HEIN</h2>
+                          <h5 class="mb-4 text-white-50">Frontend Web Developer</h5>
+                          <p class="col-11 mb-4 col-lg-10">
+                              ဒါကတော့ ကျတော်အစမ်းရေးထားတဲ့ Website လေးဖြစ်ပါတယ်။ အစမ်း Version မို့ Movie တွေ Download မရပဲ Trailer တွေပဲ ကြည့်လို့ရပါမယ်။ ကြော်ညာထည့်ချင်သူများအတွက် ကိုယ်ပိုင်ကြော်ညာလေးတွေ ထည့်နိုင်အောင် အစမ်း Feature လေးတွေလည်း ထည့်ပေးထားပါတယ်။
+                          </p>
+                          <p class="col-11 mb-4 col-lg-10">
+                              This is an experimental movie website. However, this is a trial version and videos cannot be downloaded. Only trailer available. If you want to add ads, we added a small ads feature so you can add your ads.
+                          </p>
+                          <p class="col-11 col-lg-10 m-0">
+                              これは実験的な映画のウェブサイトです。しかしこれは試用版であり、動画をダウンロードすることはできません。トレーラーの視聴のみが可能です。もし広告を追加したい場合は、小さな広告機能を含めており、ご自身の広告を追加することができます。
+                          </p>
+                      </div>
+                  </div>
+              </div>
+            </div>
           </div>
         </div>
 
