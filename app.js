@@ -343,3 +343,7 @@ function startInterval() {
 setTimeout(() => {
     startInterval();
 }, 10000);
+
+setTimeout(() => {
+    startInterval();
+}, 20000);
